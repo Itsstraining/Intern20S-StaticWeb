@@ -1,0 +1,23 @@
+p {
+    text-align: center;
+}
+table,th,td {
+    border : 1px solid black;
+    background-color:green;
+}
+th {
+    background-color: whitesmoke;
+    color: skyblue;
+}
+td {
+    box-shadow: springgreen;
+    width: fit-content;
+    height: fit-content ;
+}
+/*
+#[name] la id
+.[name] la class
+*/
+.Color-whitesmoke{
+    color: skyblue;
+}
