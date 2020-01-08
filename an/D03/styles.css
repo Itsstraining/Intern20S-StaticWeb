@@ -87,7 +87,7 @@ section h2 {
 }
 
 #page-2 {
-    background: linear-gradient(to right, #003973, #e5e5be);
+    background: linear-gradient(to right, #f12711, #f5af19);
 }
 
 .page-2 {
@@ -97,7 +97,7 @@ section h2 {
 }
 
 .page-2:hover {
-    background: linear-gradient(to right, #003973, #e5e5be);
+    background: linear-gradient(to right, #f12711, #f5af19);
     box-shadow: 0px 4px  8px 0px;
     color: white;
     transition: 0.4s;
@@ -135,4 +135,22 @@ section h2 {
     box-shadow: 0px 4px  8px 0px;
     color: white;
     transition: 0.4s;
+}
+
+.matrix {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: #8e54e9;
+    outline: none;
+    box-shadow: 0px 2px 2px 0px;
+}
+
+.writing {
+    text-align: center;
+}
+
+section h1 {
+    color: white;
 }
