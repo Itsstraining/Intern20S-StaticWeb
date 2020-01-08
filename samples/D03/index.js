@@ -1,6 +1,10 @@
 const m = 5;
 const n = 5;
 
+// cos(pi/2) and sine(pi/2)
+const cosx = 0;
+const sinex = 1;
+
 function createMatrix(m, n, defaultValue = 0) {
     let arr = [];
     for (let j = 0; j < m; j++) {
@@ -12,28 +16,17 @@ function createMatrix(m, n, defaultValue = 0) {
     return arr;
 }
 
-let matrix = createMatrix(m, n);
-
-let v = {
-    x: 1,
-    y: 0
-};
-
 function changeDirection(vector) {
-    // R -> U
-    if (vector.x === 1 && vector.y === 0) {
-        vector.x = 0;
-        vector.y = 1;
-    } else if (vector.x === 0 && vector.y === 1) {
-        vector.x = -1;
-        vector.y = 0;
-    } else if (vector.x === -1 && vector.y === 0) {
-        vector.x = 0;
-        vector.y = -1;
-    } else {
-        vector.x = 1;
-        vector.y = 0;
-    }
+
+    // Vector Rotation PI/2
+    const {
+        x,
+        y
+    } = v;
+    vector.x = x * cosx - y * sinex;
+    vector.y = x * sinex + y * cosx;
+
+
 }
 
 function checkIfCollision(current, matrix, m, n, defaultValue = 0) {
@@ -47,23 +40,37 @@ function checkIfCollision(current, matrix, m, n, defaultValue = 0) {
     }
 }
 
+function forward(current, v) {
+    current.x += v.x;
+    current.y += v.y;
+}
+
+function backward(current, v) {
+    current.x -= v.x;
+    current.y -= v.y;
+}
+
+let matrix = createMatrix(m, n);
+let v = {
+    x: 1,
+    y: 0
+};
 value = 1;
 current = {
     x: 0,
     y: 0
 };
+
 while (value <= m * n) {
     if (checkIfCollision(current, matrix, m, n)) {
         matrix[current.y][current.x] = value;
         value++;
     } else {
-        current.x -= v.x;
-        current.y -= v.y;
+        backward(current, v);
         changeDirection(v);
 
     }
-    current.x += v.x;
-    current.y += v.y;
+    forward(current, v);
 }
 
 console.log(matrix);
