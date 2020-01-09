@@ -52,17 +52,17 @@ section h2 {
     color: white;
 }
 
-#home {
+#login {
     background: linear-gradient(to right, #1d976c, #93f9b9);
 }
 
-.home {
+.login {
     padding: 8px;
     border-radius: 8px;
     transition: 0.4s;
 }
 
-.home:hover {
+.login:hover {
     background: linear-gradient(to right, #1d976c, #93f9b9);
     box-shadow: 0px 4px  8px 0px;
     color: white;
@@ -144,6 +144,7 @@ section h2 {
     border-radius: 15px;
     border-color: #8e54e9;
     outline: none;
+    font-family: 'Inconsolata', monospace;
     box-shadow: 0px 2px 2px 0px;
 }
 
@@ -153,4 +154,87 @@ section h2 {
 
 section h1 {
     color: white;
+}
+
+.login-sign-in, .login-sign-up {
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    border: 1vh;
+    border-radius: 3vh;
+    border-style: solid;
+    padding: 5vh 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.login-sign-in:hover, .login-sign-up:hover {
+    box-shadow: 0px 20px 20px 0px;
+    transition: 0.5s;
+}
+
+#btn-sign-in{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-in:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+#btn-sign-up{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-up:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px  10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+#btn-sign-up2{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-up2:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+.input-information {
+    margin-top: 1vh;
+    border: green;
+    padding: 5px 30px;
+    outline: none;
+    outline-style: solid;
+    font-family: 'Inconsolata', monospace;
 }
