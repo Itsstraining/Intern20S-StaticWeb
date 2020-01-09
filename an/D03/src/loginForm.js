@@ -40,7 +40,7 @@ const SignUpItem = `<div class="login-sign-up" id="login-sign-up">
                         <div style="width: 40%; display: inline-block; text-align: left;"><label for="password">Password:</label></div>
                         <input type="password" name="password" class="input-information" maxlength="32" placeholder="Enter your password" required>
                     </h1>
-                    <button type="submit" id="btn-sign-up2" onclick = btnSignUp2()>Sign Up</button>
+                    <button type="submit" id="btn-sign-up2">Sign Up</button>
                 </form>
             </div>`;
 

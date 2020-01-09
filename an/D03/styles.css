@@ -158,9 +158,8 @@ section h1 {
 
 .login-sign-in, .login-sign-up {
     background: linear-gradient(to right, #fc4a1a, #f7b733);
-    border: 1vh;
+    border: 0.3vh solid;
     border-radius: 3vh;
-    border-style: solid;
     padding: 5vh 5vh;
     display: flex;
     align-items: center;
