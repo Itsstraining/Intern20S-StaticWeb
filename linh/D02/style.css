@@ -79,3 +79,7 @@ p {
     height: 60px;
     transition: 1s;
 }
+
+label {
+    font-size: 10;
+}
