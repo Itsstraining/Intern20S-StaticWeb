@@ -1,0 +1,76 @@
+body{
+    background-color: white;
+}
+#mainPanel{
+    padding: 0;
+    margin: 73px 384px 73px 384px;
+   
+}
+.border{
+
+    border: 1px solid #dadce0;
+    width: 750px;
+    height: 525px;
+    border-radius: 8px;
+}
+.borderContent{
+    display: flex;
+   
+}
+ #borderContentID{
+    width: 668px    ;
+    height: 441px;
+    padding: 48px 40px 36px 40px;
+}
+.leftSide{
+    margin: 0;
+    padding: 0 48px;
+    margin: 0 -40px;
+    width: 448px;
+    height: 417px;
+}
+
+.leftForm{
+    padding: 0;
+    margin: 0;
+}
+
+#form{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 24px 0 0;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+}
+
+.line1{
+
+    display: inline-block;
+}
+
+#Ten{
+    float: right;
+    
+}
+
+
+#Ho{
+    float: left;
+}
+
+.form1{
+    border-radius: 4px;
+}
+
+.line2{
+    width: 368px;
+    height: 36px;
+}
+#line2{
+    margin  :24px 0;
+    display: inline-flex;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
