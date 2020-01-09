@@ -1,0 +1,136 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://i.gifer.com/1dJt.gif);
+    background-size: 1800px 100%;
+}
+
+div.loginWith {
+    border-radius: 6px 6px 0 0;
+    border-top: 1px solid #eee;
+    width: 400px;
+    height: 200px;
+}
+
+div.Box {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+    width: 432px;
+    height: 650px;
+    padding-top: 8px;
+    background-color: cornsilk;
+    opacity: 0.9;
+}
+
+.boxFB {
+    background-color: #3b5998;
+    height: 50px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.boxFB:hover {
+    background-color: #292f74;
+    cursor: pointer;
+}
+
+div.boxGG {
+    background-color: #4285f4;
+    height: 50px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.boxGG:hover {
+    background-color: #3370d3;
+    cursor: pointer;
+}
+
+div.boxZalo {
+    background-color: #03a5fa;
+    height: 50px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.boxZalo:hover {
+    background-color: #0087cf;
+    cursor: pointer;
+}
+
+.boxLogin {
+    background-color: #da251c;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 10px;
+    outline: none;
+}
+.boxLogin:hover {
+    background-color: #a31e17;
+    cursor: pointer;
+}
+
+p.textWhite {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.boxText {
+    width: 400px;
+}
+
+
+
+.textField {
+    line-height: 30px;
+    width: 400px;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 24px;
+    color: #525252;
+}
+
+p {
+    font-family: Arial;
+}
+
+.div.form-login {
+    widows: 400px;
+    height: 200px;
+    border-top: 1px solid #eee;
+}
+
+.fontSize {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.textLink {
+    font-size: 16px;
+    font-family: Arial;
+    color: blue;
+}
+
+.svg-fb {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
