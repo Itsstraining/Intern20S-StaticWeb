@@ -1,6 +1,14 @@
 <html>
     <head>
         <title>First HTML project</title>
+        <script>
+                function sum(a,b){
+                    Number(a);
+                    Number(b);
+                    tong = a+b;
+                    parseInt(prompt(tong));
+                }
+            </script>
     </head>
 
     <body>
@@ -17,12 +25,19 @@
                     <h3><li>list</li></ol><h3>
                 </ol>
             <h2><li>CSS</li></h2>
-            <dl>
-                <h2><dt >JavaScript</dt></h2>
-                    <dd>
-                        <script> console.log('3+4=' + 7) </script>
-                    </dd>
-            </dl>
+            <h2><li >JavaScript</li></h2>
+            <p>TỔNG</p>
+                <form>
+                    <p>a</p>
+                     <input class="num1" type="int" id='a'>
+                </form>
+                <form>
+                        <p>b</p>
+                        <input class="num2" type="int" id='b'>
+                </form>
+                <a onclick="sum()">Sum</a>
+           
+                
         </ol>
     </body> 
 </html>
