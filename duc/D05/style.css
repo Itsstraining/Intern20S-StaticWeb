@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+h1{
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.text-top input{
+    margin-top: 25px;
+    height: 75px;
+    width: 600px;
+    display: block;
+    box-shadow: none;
+    margin-left: 26%;
+    border-radius: 10px;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.text-down input{
+    margin-top: 25px;
+    height: 75px;
+    width: 600px;
+    display: block;
+    box-shadow: none;
+    margin-left: 26%;
+    border-radius: 10px;
+    outline: none;
+    font-size: 25px;
+}
+
+
+
+.keyboard {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    
+    
+}
+.keyboard div{
+    display: inline-block;
+    margin-right: 3%;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.text-down input{
+    display: block;
+    font-size: 25px ;
+}
