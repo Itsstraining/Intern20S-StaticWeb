@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li> <h1>Typing Game</h1></li>
+            <li><button id="myBtn"><img src="images/basic1-084_rotate_sync-512.png" alt=""></button></li>
+        </ul>
+    </header>
+    <div class="all">
+        <p>Typing the words given:
+        </p>
+        <h2 class="wordGiven" id="current-word">
+            none
+        </h2>
+    </div>
+    <div>
+        <input type="text" id="wordInput" autofocus name="inputWords" required="required" placeholder="Typing here :D">
+        <h3>Score: <span id="score">0</span><br>
+            Time: <span id="time">60</span>
+        </h3>
+    </div>
+
+    <h1 id="check"> Hello :D !!</h1>
+    <script>
+        window.addEventListener('load', initialize);
+
+        const button = document.getElementById("myBtn");
+        button.onclick = () => {
+            location.reload();
+        }
+        let score = 0;
+        let time = 60;
+        let isPlaying;
+        let currentTime = time;
+        const currentWord = document.getElementById("current-word")
+        const wordInput = document.getElementById("wordInput")
+        const scoreShow = document.getElementById("score");
+        const getTime = document.getElementById("time")
+        const gameOverCheck = document.getElementById("check")
+        const words = [
+            'title',
+            'events',
+            'light',
+            'dark',
+            'hi',
+            'hello',
+            'javascript',
+            'the',
+            'of',
+            'to',
+            'and',
+            'a',
+            'in',
+            'is',
+            'it',
+            'you',
+            'that',
+            'he',
+            'was',
+            'for',
+            'on',
+            'are',
+            'with',
+            'as',
+            'his',
+            'they',
+            'be',
+            'at',
+            'one',
+            'have',
+            'this',
+            'from',
+            'or',
+            'had',
+            'by',
+            'not',
+            'word',
+            'but',
+            'what',
+            'some',
+            'we',
+            'can',
+            'out',
+            'other',
+            'were',
+            'all',
+            'there',
+            'when',
+            'up'
+        ]
+        let flag = false;
+        function initialize() {
+            showWord(words);
+            wordInput.addEventListener('input', startMatch);
+            document.onkeypress = () =>{
+                if (!flag) {
+                setInterval(countdown, 1000);
+                flag = true;
+                }
+            } 
+            setInterval(checkStatus, 50);
+        }
+
+        function startMatch() {
+            if (matchWords()) {
+                isPlaying = true;
+                /*time = currentTime + 1;*/
+                showWord(words);
+                wordInput.value = '';
+                score++;
+            }
+            // If score is -1, display 0
+            if (score === -1) {
+                scoreShow.innerHTML = 0;
+            } else {
+                scoreShow.innerHTML = score;
+            }
+        }
+
+        function matchWords() {
+            if (wordInput.value === currentWord.innerHTML) {
+                gameOverCheck.innerHTML = "Correct!!!!!!!!!!!!!!";    
+                return true;
+            } else {
+                gameOverCheck.innerHTML = "";
+                return false;
+            }
+        }
+
+        function showWord(words) {
+            // Generate random array index
+            const randIndex = Math.floor(Math.random() * words.length);
+            // Output random word
+            currentWord.innerHTML = words[randIndex];
+        }
+
+        function checkStatus() {
+            if (!isPlaying && time === 0) {
+                gameOverCheck.innerHTML = "GameOver!!!!!!!";
+                score = -1;
+            }
+        }
+
+        function countdown() {
+            if (time > 0) {
+                time--;
+            }
+            isPlaying = false;
+
+            getTime.innerHTML = time;
+        }
+
+    </script>
+</body>
+</html>

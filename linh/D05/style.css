@@ -1,0 +1,187 @@
+header {
+    text-align: left;
+    margin: auto;
+    position: relative;
+    padding: 1px;
+    line-height: 1.5em;
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+
+body {
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+    font-family: 'Nunito', sans-serif;
+}
+
+input {
+    position: relative;
+    margin-top: 1%;
+    margin-left: 42.5%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 1em;
+    outline: none;
+    animation: vibrate-2 0.3s linear infinite both;
+}
+
+.all {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+h2 {
+    margin-top: 1%;
+    font-size: 50px;
+    color: black;
+}
+
+h3 {
+    margin-top: 1%;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px #355c7d;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 40px;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.wordGiven {
+    text-shadow: 4px 4px #355c7d;
+    animation: textAnimation 0.65s linear both;
+    
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wordAnimation {
+    from {color:#a8c0ff}
+    to {color: linear-gradient(to right, #a8c0ff, #3f2b96);}
+}
+
+p {
+    animation-name: wordAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-shadow: 4px 4px #355c7d;
+}
+
+img {
+    width: 30px;
+}
+
+li {
+    display: inline-block;
+}
+
+button {
+    text-align: right;
+    margin-left: 1000px;
+    outline: none;
+    border-radius: 150%;
+    border: none;
+    animation: buttonAnimation 1s ease-in-out infinite;
+    text-shadow: 4px 4px #355c7d;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+    50% {
+        transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+h3 {
+    animation: bounce-top 0.9s both;
+    text-decoration: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+@keyframes vibrate-2 {
+    0% {
+              transform: translate(0);
+    }
+    20% {
+              transform: translate(2px, -2px);
+    }
+    40% {
+              transform: translate(2px, 2px);
+    }
+    60% {
+              transform: translate(-2px, 2px);
+    }
+    80% {
+              transform: translate(-2px, -2px);
+    }
+    100% {
+              transform: translate(0);
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+              transform: translateY(-45px);
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+              transform: translateY(-24px);
+              animation-timing-function: ease-in;
+    }
+    65% {
+              transform: translateY(-12px);
+              animation-timing-function: ease-in;
+    }
+    82% {
+              transform: translateY(-6px);
+              animation-timing-function: ease-in;
+    }
+    93% {
+              transform: translateY(-4px);
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+              transform: translateY(0px);
+              animation-timing-function: ease-out;
+    }
+    100% {
+              transform: translateY(0px);
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
