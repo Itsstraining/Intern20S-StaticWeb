@@ -1,0 +1,46 @@
+body{
+    background-color:cornflowerblue;
+}
+div{
+    text-align: center;
+}
+input{
+    text-align:center;
+    width: 800px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+li{
+    display: inline-block;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    color:royalblue;
+}
+ul{
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 270px;
+    margin-right: 270px;
+    padding-top: 30px;
+    padding-left: unset;
+    background-color: whitesmoke;
+}
+.wordcontent li {
+    margin-right: 20px;
+
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+#timer{
+    margin-top: 0px;
+}
